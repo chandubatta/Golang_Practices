@@ -20,6 +20,11 @@ func main() {
 	}
 	fmt.Printf("data type %T and data %v", bytes_data, bytes_data)
 	fmt.Println()
-	fmt.Print(string(bytes_data))
+	fmt.Println(string(bytes_data))
+
+	//Rune creation
+	var r1 rune = '@'
+	var r2 rune
+	fmt.Println(r1, r2)
 
 }
