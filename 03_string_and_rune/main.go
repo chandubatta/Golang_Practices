@@ -90,7 +90,7 @@ func main() {
 	fmt.Println(s11)
 	// Using Builder
 	B := strings.Builder{}
-	B.Grow(1024)
+	B.Grow(1024) //Grow() function is used for fixed size fo the building string
 	B.WriteString(s4)
 	B.WriteString(" ")
 	B.WriteString(s5)
@@ -100,6 +100,18 @@ func main() {
 	s12 := "Hi Chandu, How are you"
 	i1 := string(s12[5])
 	fmt.Println(i1)
-	
+	ss := "Hello"
+	vk1 := ss[1]
+	fmt.Println(string(vk1))
+	sk := "Héllo"
+	vk := sk[1] //byte value coming
+	fmt.Println(vk)
+
+	//Substring
+	k1 := "chandu is good boy"
+	k2 := k1[3:9]
+	fmt.Println(k2) //direct string value comimg
+	k3 := k1[3:]
+	fmt.Println(k3)
 
 }
